@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ImageScale</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="local_image_fragment_label">Local Image</string>
+    <string name="second_fragment_label">Menu</string>
+    <string name="next">Next</string>
+    <string name="go_to_local_imagem">Imagem Local</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="go_to_remote_imagem">Imagem Remota</string>
+    <string name="go_to_random_imagem">Imagem Randomica</string>
+</resources>

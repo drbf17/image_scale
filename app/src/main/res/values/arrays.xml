@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="scale_types">
+        <item>CENTER_CROP</item>
+        <item>CENTER</item>
+        <item>CENTER_INSIDE</item>
+        <item>FIT_CENTER</item>
+        <item>FIT_END</item>
+        <item>FIT_START</item>
+        <item>FIT_XY</item>
+        <item>MATRIX</item>
+    </string-array>
+
+    <string-array name="image_type">
+        <item>JPEG</item>
+        <item>WEBAPP</item>
+    </string-array>
+
+ <integer-array name="image_files">
+     <item>@drawable/image</item>
+     <item>@drawable/imagewebp</item>
+ </integer-array>
+</resources>
+

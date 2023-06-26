@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MainFragment">
+
+    <fragment
+        android:id="@+id/LocalImageFragment"
+        android:name="com.example.imagescale.LocalImageFragment"
+        android:label="@string/local_image_fragment_label"
+        tools:layout="@layout/fragment_local_image">
+
+        <action
+            android:id="@+id/action_LocalImageFragment_to_MainFragment"
+            app:destination="@id/MainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MainFragment"
+        android:name="com.example.imagescale.MainFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_main">
+
+        <action
+            android:id="@+id/action_MainFragment_to_LocalImageFragment"
+            app:destination="@id/LocalImageFragment" />
+        <action
+            android:id="@+id/action_MainFragment_to_RemoteImageFragment"
+            app:destination="@id/RemoteImageFragment" />
+        <action
+            android:id="@+id/action_MainFragment_to_RandomImageFragment"
+            app:destination="@id/RendomImageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/RemoteImageFragment"
+        android:name="com.example.imagescale.RemoteImageFragment"
+        android:label="Imagem Remota"
+        tools:layout="@layout/fragment_local_image">
+        <action
+            android:id="@+id/action_RemoteImageFragment_to_MainFragment"
+            app:destination="@id/MainFragment" />
+
+    </fragment>
+    o<fragment
+        android:id="@+id/RendomImageFragment"
+        android:name="com.example.imagescale.RandomImageFragment"
+        android:label="Imagem Randomica"
+        tools:layout="@layout/fragment_local_image">
+        <action
+            android:id="@+id/action_RandomImageFragment_to_MainFragment"
+            app:destination="@id/MainFragment" />
+
+    </fragment>
+</navigation>
